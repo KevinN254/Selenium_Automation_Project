@@ -1,0 +1,23 @@
+<suite name="carguruTests" parallel="classes">
+
+    <test name="carguruTests">
+
+        <parameter name="baseUrl" value="http://www.autotrader.com/"/>
+        <parameter name="local" value="true"/>
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserName" value="firefox"/>
+
+        <groups >
+            <run>
+                <!--<include name=""/>-->
+
+            </run>
+        </groups>
+
+        <classes >
+            <class name="carwebsites.carguru.HomePageTest"/>
+            <class name="carwebsites.carguru.LogInTest"/>
+        </classes>
+    </test>
+
+</suite>
